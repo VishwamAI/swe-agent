@@ -45,45 +45,52 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-# SWE-Agent
+# Cybersecurity Agent
 
-SWE-Agent is a conversational AI agent designed to assist with software engineering tasks. It leverages open-source models from Hugging Face's Transformers library to provide intelligent responses and support for various development activities.
+The Cybersecurity Agent is designed to autonomously learn and practice cybersecurity challenges across various platforms. It integrates data from the Exploit Database and simulates interactions with platforms like TryHackMe and picoCTF to enhance its knowledge and skills.
 
 ## Features
 
-- Interactive chat interface using a pre-trained DialoGPT model.
-- Parameterized model loading for flexibility.
-- Customizable response generation with adjustable parameters.
+- Fetches and categorizes exploit data from the Exploit Database.
+- Interactive learning and practice environment.
+- Integration with TryHackMe and picoCTF for practical challenges.
+- Documented learning process and solution verification using Google.
 
 ## Setup
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/VishwamAI/swe-agent.git
-   cd swe-agent
+   git clone https://github.com/VishwamAI/Cyber-Security-agent.git
+   cd Cyber-Security-agent
    ```
 
-2. **Create and activate a virtual environment:**
+2. **Install the required packages:**
    ```bash
-   python3 -m venv venv
-   source venv/bin/activate
+   npm install
    ```
 
-3. **Install the required packages:**
+3. **Start the backend server:**
    ```bash
-   pip install -r requirements.txt
+   cd backend
+   node index.js
+   ```
+
+4. **Start the frontend server:**
+   ```bash
+   cd ../frontend
+   npm start
    ```
 
 ## Usage
 
-1. **Run the chat agent:**
-   ```bash
-   python chat_agent.py
-   ```
+1. **Access the web application:**
+   Open [http://localhost:3000](http://localhost:3000) in your browser to view the frontend.
 
-2. **Interact with the model:**
-   - Type your messages and press Enter to receive responses from the model.
-   - Type 'exit' to stop the chat.
+2. **Fetch and process exploit data:**
+   The backend server will fetch and categorize exploit data from the Exploit Database and serve it at the `/exploits` endpoint.
+
+3. **Interact with the learning environment:**
+   Use the web application to simulate interactions with cybersecurity platforms and practice challenges.
 
 ## Contributing
 
