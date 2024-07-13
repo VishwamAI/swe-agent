@@ -68,6 +68,3 @@ function App() {
 }
 
 export default App;
-/* TODO: Add onClick event handlers for challenge buttons */
-console.log('handleStartChallenge called with:', challengeKey);
-console.log('currentChallenge state after update:', currentChallenge);
