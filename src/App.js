@@ -34,7 +34,9 @@ function App() {
   };
 
   const handleStartChallenge = (challengeKey) => {
+    console.log(`Starting challenge: ${challengeKey}`);
     setCurrentChallenge(challenges[challengeKey]);
+    console.log('Current challenge set to:', challenges[challengeKey]);
   };
 
   return (
@@ -67,3 +69,5 @@ function App() {
 
 export default App;
 /* TODO: Add onClick event handlers for challenge buttons */
+console.log('handleStartChallenge called with:', challengeKey);
+console.log('currentChallenge state after update:', currentChallenge);
